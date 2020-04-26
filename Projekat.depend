@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1587832007 source:d:\codeblocks\projekat\main.cpp
+	<iostream>
+	"igrac.hpp"
+
+1587831799 d:\codeblocks\projekat\igrac.hpp
+
