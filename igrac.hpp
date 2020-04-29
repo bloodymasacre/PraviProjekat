@@ -61,9 +61,9 @@ class Igrac{
     Skakanje(){
         int x, y, z;
         if(Sk==true && Br==true){
-            Pozicija(x+1, y, z+1);
+            return Pozicija(x+1, y, z+1);
             Sleep(1000);
-            Pozicija(x+1,y,z-1);
+            return Pozicija(x+1,y,z-1);
         }
 
     }
