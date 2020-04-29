@@ -17,6 +17,9 @@ public:
         y=yy;
         z=zz;
     }
+    void setX(double xx){x=xx;}
+    void setY(double yy){y=yy;}
+    void setZ(double zz){z=zz;}
 };
 
 #endif // POZICIJA_H_INCLUDED
