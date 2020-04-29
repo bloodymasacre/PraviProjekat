@@ -51,21 +51,23 @@ class Igrac{
     void setBoja(string NovaBoja){bojaKoze=NovaBoja;}
 
 
-    Trcanje(){
+    bool Trcanje(){
         if(Br==true && brzina<MaxBrzina){
             brzina=MaxBrzina;
+            return true;
         }
-        return brzina;
+        return false;
     }
 
-    Skakanje(){
+    bool Skakanje(){
         int x, y, z;
         if(Sk==true && Br==true){
-            return Pozicija(x+1, y, z+1);
+            Pozicija(x+1, y, z+1);
             Sleep(1000);
-            return Pozicija(x+1,y,z-1);
+            Pozicija(x+1,y,z-1);
+            return true;
         }
-
+        return false;
     }
 
 };

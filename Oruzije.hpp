@@ -20,19 +20,22 @@ class Oruzije{
         Nadaljinu=true;
         damageO=30;
     }
-    Pucanje(){
+    bool Pucanje(){
         ammo=40;
         while(ammo=!0 && levi_klik==true){
             ammo--;
+            return true
         }
-        return ammo;
+        return false;
     }
-    Reload(){
+    bool Reload(){
         sarzer=5;
         if(ammo==o && sarzer=!0 && R==true){
             Sleep(1000);
-            return ammo=40;
+            ammo=40;
+            return true;
         }
+        return false;
     }
 };
 
