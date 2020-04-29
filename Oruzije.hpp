@@ -25,13 +25,13 @@ class Oruzije{
         while(ammo=!0 && levi_klik==true){
             ammo--;
         }
+        return ammo;
     }
     Reload(){
-        ammo=40;
         sarzer=5;
         if(ammo==o && sarzer=!0 && R==true){
             Sleep(1000);
-            ammo=40;
+            return ammo=40;
         }
     }
 };
