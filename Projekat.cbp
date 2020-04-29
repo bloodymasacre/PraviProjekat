@@ -46,6 +46,7 @@
 		<Unit filename="Oruzije.hpp" />
 		<Unit filename="Pickaxe.h" />
 		<Unit filename="Pistolji.h" />
+		<Unit filename="Pozicija.h" />
 		<Unit filename="Puske.h" />
 		<Unit filename="Teren.hpp" />
 		<Unit filename="Vozila.hpp" />

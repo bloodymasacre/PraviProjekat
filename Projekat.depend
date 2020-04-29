@@ -5,3 +5,16 @@
 
 1587831799 d:\codeblocks\projekat\igrac.hpp
 
+1587895944 source:c:\users\kolja\documents\github\projekat\main.cpp
+	<iostream>
+	"igrac.hpp"
+	"Zivotinje.hpp"
+
+1588154924 c:\users\kolja\documents\github\projekat\igrac.hpp
+	"Pozicija.h"
+	<windows.h>
+
+1588154783 c:\users\kolja\documents\github\projekat\pozicija.h
+
+1587895944 c:\users\kolja\documents\github\projekat\zivotinje.hpp
+
