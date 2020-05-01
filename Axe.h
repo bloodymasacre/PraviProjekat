@@ -4,8 +4,10 @@
 
 class Axe{
 protected:
-    Orudje Primitivni_axe;
-    Orudje Napredni_axe;
+    int damageP;
+public:
+    Axe():Orudje("metal, drvo, kanap", 150, 40), damageP(15);
+
 };
 
 #endif // AXE_H_INCLUDED

@@ -4,8 +4,12 @@
 
 class Puske{
 protected:
-    Oruzije automatske_puske;
-    Oruzije poluautomatske_puske;
-}
+    bool automatski;
+public:
+    Puske():Oruzije("metal, drvo, rifle body", 250, false, true, 20, 30, 5), automatski(true);
+
+
+};
+
 
 #endif // PUSKE_H_INCLUDED
