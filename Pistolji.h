@@ -2,13 +2,11 @@
 #define PISTOLJI_H_INCLUDED
 #include "Oruzije.hpp"
 
-class Pistolji{
+class Pistolji: public Oruzije{
 private:
-    Oruzije Orue;
     bool automatski;
 public:
-    Pistolji():Orue(), automatski(true){};
-
+    Pistolji():Oruzije(), automatski(true){};
 };
 
 #endif // PISTOLJI_H_INCLUDED

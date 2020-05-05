@@ -2,12 +2,11 @@
 #define AXE_H_INCLUDED
 #include "Orudje.hpp"
 
-class Axe{
+class Axe:public Orudje{
 protected:
-    Orudje Oru;
     int damageP;
 public:
-    Axe():Oru(), damageP(15){};
+    Axe():Orudje(), damageP(15){};
 };
 
 #endif // AXE_H_INCLUDED

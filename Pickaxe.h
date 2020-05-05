@@ -2,13 +2,11 @@
 #define PICKAXE_H_INCLUDED
 #include "Orudje.hpp"
 
-class Pickaxe{
+class Pickaxe:public Orudje{
 protected:
-    Orudje Oru;
     int damageP;
 public:
-    Pickaxe():Oru(), damageP(15){};
-
+    Pickaxe():Orudje(), damageP(15){};
 };
 
 #endif // PICKAXE_H_INCLUDED

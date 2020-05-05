@@ -2,14 +2,11 @@
 #define PUSKE_H_INCLUDED
 #include "Oruzije.hpp"
 
-class Puske{
+class Puske:public Oruzije{
 protected:
-    Oruzije Orue;
     bool automatski;
 public:
-    Puske():Orue(), automatski(true){};
-
-
+    Puske():Oruzije(), automatski(true){};
 };
 
 
