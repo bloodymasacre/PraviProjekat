@@ -4,9 +4,10 @@
 
 class Puske{
 protected:
+    Oruzije Orue;
     bool automatski;
 public:
-    Puske():Oruzije("metal, drvo, rifle body", 250, false, true, 20, 30, 5), automatski(true);
+    Puske():Orue(), automatski(true){};
 
 
 };

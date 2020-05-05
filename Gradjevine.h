@@ -2,11 +2,11 @@
 #define GRADJEVINE_H_INCLUDED
 
 class Gradjevine{
-   privet:
+   private:
 	bool populacija;
 	int velicina;
 	bool sigurnost;
 	bool zagonetke;
-}
+};
 
 #endif // GRADJEVINE_H_INCLUDED

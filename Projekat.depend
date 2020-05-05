@@ -5,16 +5,76 @@
 
 1587831799 d:\codeblocks\projekat\igrac.hpp
 
-1588159260 source:c:\users\kolja\documents\github\projekat\main.cpp
+1588688402 source:c:\users\kolja\documents\github\projekat\main.cpp
 	<iostream>
 	"igrac.hpp"
 	"Zivotinje.hpp"
+	"Oruzije.hpp"
+	"Pistolji.h"
+	"Orudje.hpp"
+	"Oprema.hpp"
+	"Eksploziv.hpp"
+	"Axe.h"
+	"Gradjevine.h"
+	"Materijali.hpp"
+	"Puske.h"
+	"Medikamenti.hpp"
+	"Teren.hpp"
+	"Healt.hpp"
+	"Inventori.hpp"
+	"Kutije.hpp"
+	"Pozicija.h"
+	"Vozila.hpp"
+	"Vreme.hpp"
+	"Hrana.hpp"
+	"Pickaxe.h"
 
-1588163028 c:\users\kolja\documents\github\projekat\igrac.hpp
+1588164037 c:\users\kolja\documents\github\projekat\igrac.hpp
 	"Pozicija.h"
 	<windows.h>
 
 1588162882 c:\users\kolja\documents\github\projekat\pozicija.h
 
 1587895944 c:\users\kolja\documents\github\projekat\zivotinje.hpp
+
+1588685255 c:\users\kolja\documents\github\projekat\oruzije.hpp
+	"fstream"
+
+1588687921 c:\users\kolja\documents\github\projekat\pistolji.h
+	"Oruzije.hpp"
+
+1588686931 c:\users\kolja\documents\github\projekat\orudje.hpp
+
+1588686936 c:\users\kolja\documents\github\projekat\oprema.hpp
+
+1588686941 c:\users\kolja\documents\github\projekat\eksploziv.hpp
+
+1588687822 c:\users\kolja\documents\github\projekat\axe.h
+	"Orudje.hpp"
+
+1588686989 c:\users\kolja\documents\github\projekat\gradjevine.h
+
+1588686995 c:\users\kolja\documents\github\projekat\materijali.hpp
+
+1588687976 c:\users\kolja\documents\github\projekat\puske.h
+	"Oruzije.hpp"
+
+1588687009 c:\users\kolja\documents\github\projekat\medikamenti.hpp
+
+1588687014 c:\users\kolja\documents\github\projekat\teren.hpp
+
+1588687019 c:\users\kolja\documents\github\projekat\healt.hpp
+
+1588687025 c:\users\kolja\documents\github\projekat\inventori.hpp
+
+1588687030 c:\users\kolja\documents\github\projekat\kutije.hpp
+
+1588687035 c:\users\kolja\documents\github\projekat\vozila.hpp
+
+1588687039 c:\users\kolja\documents\github\projekat\vreme.hpp
+
+1588687050 c:\users\kolja\documents\github\projekat\hrana.hpp
+
+1588687863 c:\users\kolja\documents\github\projekat\pickaxe.h
+	"Orudje.hpp"
 

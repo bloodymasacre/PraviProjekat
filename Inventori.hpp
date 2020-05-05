@@ -2,9 +2,9 @@
 #define INVENTORI_HPP_INCLUDED
 
 class Inventori{
-   privet:
+   private:
 	int polja;
 	int VelicinaPolja;
-}
+};
 
 #endif // INVENTORI_HPP_INCLUDED

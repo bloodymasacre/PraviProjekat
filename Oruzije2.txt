@@ -1,0 +1,4 @@
+materijal= "metal, drvo, body, HQM", izdrzljivost=300, primitivno=false, na daljinu=true, damage=40, ammo=30, sarzer=4 - ak 47
+materijal= "metal, drvo, body", izdrzljivost=100, primitivno=true, na daljinu=false, damage=15, ammo=20, sarzer=3 - revolver 
+materijal= "metal, drvo, body, HQM", izdrzljivost=200, primitivno=false, na daljinu=true, damage=60, ammo=5, sarzer=6 - bolt action sniper 
+ 

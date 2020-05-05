@@ -4,9 +4,10 @@
 
 class Pickaxe{
 protected:
+    Orudje Oru;
     int damageP;
 public:
-    Pickaxe():Orudje("metal, drvo, kanap", 150, 40), damageP(15);
+    Pickaxe():Oru(), damageP(15){};
 
 };
 

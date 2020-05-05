@@ -2,10 +2,10 @@
 #define OPREMA_HPP_INCLUDED
 
 class Oprema{
-   privet:
+   private:
 	string vrstaOp;
 	int izdrzljivostO;
 	int zastita;
-}
+};
 
 #endif // OPREMA_HPP_INCLUDED

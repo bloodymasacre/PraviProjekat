@@ -4,9 +4,10 @@
 
 class Pistolji{
 private:
+    Oruzije Orue;
     bool automatski;
 public:
-    Pistolji():Oruzije("metal, drvo, rifle body", 250, false, true, 20, 30, 5), automatski(true);
+    Pistolji():Orue(), automatski(true){};
 
 };
 

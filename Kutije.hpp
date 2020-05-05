@@ -2,9 +2,9 @@
 #define KUTIJE_HPP_INCLUDED
 
 class Kutije{
-   privet:
+   private:
 	string nivo;
 	int retkocaK;
-}
+};
 
 #endif // KUTIJE_HPP_INCLUDED

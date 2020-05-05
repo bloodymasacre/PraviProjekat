@@ -4,10 +4,10 @@
 
 class Axe{
 protected:
+    Orudje Oru;
     int damageP;
 public:
-    Axe():Orudje("metal, drvo, kanap", 150, 40), damageP(15);
-
+    Axe():Oru(), damageP(15){};
 };
 
 #endif // AXE_H_INCLUDED

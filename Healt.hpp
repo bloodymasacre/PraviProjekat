@@ -2,10 +2,10 @@
 #define HEALT_HPP_INCLUDED
 
 class Healt{
-   privet:
+   private:
 	int kolicinaH;
 	int kolicinaA;
 	bool stanje;
-}
+};
 
 #endif // HEALT_HPP_INCLUDED

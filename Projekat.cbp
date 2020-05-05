@@ -44,6 +44,7 @@
 		<Unit filename="Oprema.hpp" />
 		<Unit filename="Orudje.hpp" />
 		<Unit filename="Oruzije.hpp" />
+		<Unit filename="Oruzije2.txt" />
 		<Unit filename="Pickaxe.h" />
 		<Unit filename="Pistolji.h" />
 		<Unit filename="Pozicija.h" />

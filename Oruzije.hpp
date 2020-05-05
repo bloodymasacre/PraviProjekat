@@ -1,5 +1,7 @@
 #ifndef ORUZIJE_HPP_INCLUDED
 #define ORUZIJE_HPP_INCLUDED
+#include "fstream"
+
 
 class Oruzije{
    private:
@@ -11,10 +13,10 @@ class Oruzije{
 	int ammo;
 	int sarzer;
 	bool levi_klik;
-	bool R,
+	bool R;
    public:
     Oruzije(){
-        recept="metal, body, HQM"
+        recept="metal, body, HQM";
         izdrzljivost=250;
         primitivno=false;
         Nadaljinu=true;
@@ -24,13 +26,13 @@ class Oruzije{
         ammo=40;
         while(ammo=!0 && levi_klik==true){
             ammo--;
-            return true
+            return true;
         }
         return false;
     }
     bool Reload(){
         sarzer=5;
-        if(ammo==o && sarzer=!0 && R==true){
+        if(ammo==0 && sarzer!=0 && R==true){
             Sleep(1000);
             ammo=40;
             return true;
@@ -38,5 +40,31 @@ class Oruzije{
         return false;
     }
 };
+
+void pisiTxt(string oruzije2, string tekst)
+{
+    ofstream fajl;
+    fajl.open (oruzije2);
+    fajl << tekst << endl;
+    fajl.close();
+}
+
+void citajOruzije(string oruzije2)
+{
+    string linija;
+    ifstream fajl (oruzije2);
+    if (fajl.is_open())
+    {
+        while ( getline (fajl,linija) )
+        {
+            cout << linija << '\n';
+        }
+        fajl.close();
+    }
+
+    else
+        cout << "Neuspesno otvoren fajl";
+
+}
 
 #endif // ORUZIJE_HPP_INCLUDED

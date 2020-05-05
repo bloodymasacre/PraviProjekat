@@ -2,10 +2,10 @@
 #define TEREN_HPP_INCLUDED
 
 class Teren{
-   privet:
+   private:
 	int nadVisina;
 	string vode;
 	string vegetacija;
-}
+};
 
 #endif // TEREN_HPP_INCLUDED

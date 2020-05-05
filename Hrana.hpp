@@ -2,9 +2,9 @@
 #define HRANA_HPP_INCLUDED
 
 class Hrana{
-   privet:
+   private:
 	string vrstaH;
 	int hranljivost;
-}
+};
 
 #endif // HRANA_HPP_INCLUDED

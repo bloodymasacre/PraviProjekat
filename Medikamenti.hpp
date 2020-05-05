@@ -2,10 +2,10 @@
 #define MEDIKAMENTI_HPP_INCLUDED
 
 class Medikamenti{
-   privet:
+   private:
 	string vrstaM;
 	int vremeUpotrebe;
 	int efi;
-}
+};
 
 #endif // MEDIKAMENTI_HPP_INCLUDED
