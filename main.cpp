@@ -34,6 +34,7 @@ ostream& operator<< (ostream& izlaz, const Oruzije& o)
     izlaz<<"Damage: "<<o.damageO<<endl;
     izlaz<<"ammo: "<<o.ammo<<endl;
     izlaz<<"sarzer: "<<o.sarzer<<endl;
+    return izlaz;
 }
 
 ostream& operator<< (ostream& izlaz, const Zivotinje& z)
@@ -41,7 +42,7 @@ ostream& operator<< (ostream& izlaz, const Zivotinje& z)
     cout<<"Zivotinja: "<<endl;
     izlaz<<"vrsta: "<<z.vrstaZ<<endl;
     izlaz<<"damage: "<<z.damageZ<<endl;
-
+    return izlaz;
 }
 
 ostream& operator<< (ostream& izlaz, const Igrac& i)
@@ -52,14 +53,17 @@ ostream& operator<< (ostream& izlaz, const Igrac& i)
     izlaz<<"Bojakoze: "<<i.bojaKoze<<endl;
     izlaz<<"Brzina: "<<i.brzina<<endl;
     izlaz<<"MaxBrzina: "<<i.MaxBrzina<<endl;
+    return izlaz;
 }
 
 int main()
 {
     Igrac igrac;
+    Igrac igrac2;
     Oruzije o;
     Zivotinje z;
     cout<<igrac<<endl<<endl;
+    cout<<igrac2<<endl<<endl;
     //citajOruzije("oruzije2.txt");
     cout<<o<<endl<<endl;
     cout<<z<<endl<<endl;
