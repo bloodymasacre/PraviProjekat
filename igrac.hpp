@@ -25,8 +25,8 @@ public:
         ime="BloodyMasacre";
         pol="Muski";
         bojaKoze="Crna";
-        brzina=1,5;
-        MaxBrzina=2,5;
+        brzina=1.5;
+        MaxBrzina=2.5;
         broj++;
     }
     Igrac(string im, string po, string bk, double brzina1, double MaxBrzina1, bool Sk1, bool Br1, double xx, double yy, double zz):Sko(xx,yy,zz)

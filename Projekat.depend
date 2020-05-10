@@ -5,7 +5,7 @@
 
 1587831799 d:\codeblocks\projekat\igrac.hpp
 
-1588951254 source:c:\users\kolja\documents\github\projekat\main.cpp
+1589130416 source:c:\users\kolja\documents\github\projekat\main.cpp
 	<iostream>
 	"igrac.hpp"
 	"Zivotinje.hpp"
@@ -29,7 +29,7 @@
 	"Hrana.hpp"
 	"Pickaxe.h"
 
-1588951150 c:\users\kolja\documents\github\projekat\igrac.hpp
+1589131518 c:\users\kolja\documents\github\projekat\igrac.hpp
 	"Pozicija.h"
 	<windows.h>
 
@@ -37,7 +37,7 @@
 
 1588949246 c:\users\kolja\documents\github\projekat\zivotinje.hpp
 
-1588949246 c:\users\kolja\documents\github\projekat\oruzije.hpp
+1589131569 c:\users\kolja\documents\github\projekat\oruzije.hpp
 	"fstream"
 
 1588949246 c:\users\kolja\documents\github\projekat\pistolji.h
