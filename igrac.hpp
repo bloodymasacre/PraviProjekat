@@ -83,7 +83,10 @@ public:
     {
         return broj;
     }
-
+    ~Igrac()
+    {
+        broj--;
+    }
 
     bool Trcanje()
     {

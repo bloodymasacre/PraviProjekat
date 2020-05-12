@@ -26,7 +26,6 @@ int Igrac::broj=0;
 
 ostream& operator<< (ostream& izlaz, const Oruzije& o)
 {
-    cout<<"Puska: "<<endl;
     izlaz<<"recept: "<<o.recept<<endl;
     izlaz<<"izdrzljivost: "<<o.izdrzljivost<<endl;
     izlaz<<"primitivnost: "<<o.primitivno<<endl;
@@ -39,7 +38,6 @@ ostream& operator<< (ostream& izlaz, const Oruzije& o)
 
 ostream& operator<< (ostream& izlaz, const Zivotinje& z)
 {
-    cout<<"Zivotinja: "<<endl;
     izlaz<<"vrsta: "<<z.vrstaZ<<endl;
     izlaz<<"damage: "<<z.damageZ<<endl;
     return izlaz;
@@ -47,7 +45,6 @@ ostream& operator<< (ostream& izlaz, const Zivotinje& z)
 
 ostream& operator<< (ostream& izlaz, const Igrac& i)
 {
-    cout<<"Igrac: "<<endl;
     izlaz<<"Ime: "<<i.ime<<endl;
     izlaz<<"Pol: "<<i.pol<<endl;
     izlaz<<"Bojakoze: "<<i.bojaKoze<<endl;
