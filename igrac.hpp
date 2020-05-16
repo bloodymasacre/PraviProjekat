@@ -126,7 +126,7 @@ class Premium: public Igrac
 private:
     bool premium;
 public:
-    Premium(string i="Mimi", string p="muski", string bk="bela", double br=1, bool premium=true)
+    Premium(string i="Mimi", string p="muski", string bk="bela", double br=1, bool premium=true):Igrac(i, p, bk, br)
     {
         this->premium=premium;
     }
@@ -153,7 +153,7 @@ class Moderator:public Igrac
 private:
     string roles;
 public:
-    Moderator(string n="Sasa", string s="muski", string c="crna", double sp=1, string z="Owner")
+    Moderator(string n="Sasa", string s="muski", string c="crna", double sp=1, string z="Owner"):Igrac(n,s,c,sp)
     {
         roles=z;
     }
