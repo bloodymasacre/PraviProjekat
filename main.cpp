@@ -21,6 +21,7 @@ using namespace std;
 #include "Vreme.hpp"
 #include "Hrana.hpp"
 #include "Pickaxe.h"
+#include "Server.hpp"
 
 int Igrac::broj=0;
 
@@ -61,10 +62,16 @@ int main()
     Zivotinje z;
     cout<<igrac<<endl<<endl;
     cout<<igrac2<<endl<<endl;
-    //citajOruzije("oruzije2.txt");
     cout<<o<<endl<<endl;
     cout<<z<<endl<<endl;
     cout<<"Online je:"<<igrac.getBroj()<<" igraca"<<endl;
+    Server se(124151);
+    Igrac igrac3();
+    Premium premium("mitar", "muski", "crna", 1, true);
+    Moderator moderator1();
+    se.dodavanje(&igrac3);
+    se.dodavanje(&premium);
+    se.dodavanje(&moderator1);
     return 0;
 
     // Funkcionalnost igrice je da se seta po mapi i skoplja razlicite vrste materijala. Nacini da dobiju materijali su da se nadju u prirodi ili ubiju NPC-evi ili da se ubiju drugi igraci da biste im uzeli iste.

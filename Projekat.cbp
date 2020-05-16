@@ -49,6 +49,7 @@
 		<Unit filename="Pistolji.h" />
 		<Unit filename="Pozicija.h" />
 		<Unit filename="Puske.h" />
+		<Unit filename="Server.hpp" />
 		<Unit filename="Teren.hpp" />
 		<Unit filename="Vozila.hpp" />
 		<Unit filename="Vreme.hpp" />

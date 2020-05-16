@@ -51,15 +51,15 @@ public:
         Br=I.Br;
         broj++;
     }
-    string getIme()
+    string getIme() const
     {
         return ime;
     }
-    string getPol()
+    string getPol() const
     {
         return pol;
     }
-    string getBojaKoze()
+    string getBojaKoze() const
     {
         return bojaKoze;
     }
@@ -110,7 +110,67 @@ public:
         }
         return false;
     }
+    virtual int id()
+    {
+        return 0;
+    }
+    virtual void opis()
+    {
+        cout<<"ja"<<ime<<" "<<"imam akaunt"<<endl;
+    }
     friend ostream& operator<< (ostream& izlaz, const Igrac& i);
 };
+
+class Premium: public Igrac
+{
+private:
+    bool premium;
+public:
+    Premium(string i="Mimi", string p="muski", string bk="bela", double br=1, bool premium=true)
+    {
+        this->premium=premium;
+    }
+    Premium(const Premium& p):Igrac(p)
+    {
+        premium=p.premium;
+    }
+    int id()
+    {
+        return 1;
+    }
+    void opis()
+    {
+        Igrac::opis();
+        if(premium)
+            cout<<"ali je moj premium"<<endl;
+        else
+            cout<<"ali moj nije premium"<<endl;
+    }
+};
+
+class Moderator:public Igrac
+{
+private:
+    string roles;
+public:
+    Moderator(string n="Sasa", string s="muski", string c="crna", double sp=1, string z="Owner")
+    {
+        roles=z;
+    }
+    Moderator(const Moderator& m):Igrac(m)
+    {
+        roles=m.roles;
+    }
+    int id()
+    {
+        return 2;
+    }
+    void opis()
+    {
+        Igrac::opis();
+        cout<<"a moj role je: "<<roles<<endl;
+    }
+};
+
 
 #endif // IGRAC_HPP_INCLUDED
