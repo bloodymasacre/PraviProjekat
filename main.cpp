@@ -66,12 +66,13 @@ int main()
     cout<<z<<endl<<endl;
     cout<<"Online je:"<<igrac.getBroj()<<" igraca"<<endl;
     Server se(124151);
-    Igrac igrac3();
-    Premium premium("mitar", "muski", "crna", 1, true);
-    Moderator moderator1();
+    Igrac igrac3;
+    Premium premium2("mitar", "muski", "crna", 1, true);
+    Moderator moderator1("natali","zensko","bela", 1, "admin");
     se.dodavanje(&igrac3);
-    se.dodavanje(&premium);
+    se.dodavanje(&premium2);
     se.dodavanje(&moderator1);
+    se.ispisiIgrace();
     return 0;
 
     // Funkcionalnost igrice je da se seta po mapi i skoplja razlicite vrste materijala. Nacini da dobiju materijali su da se nadju u prirodi ili ubiju NPC-evi ili da se ubiju drugi igraci da biste im uzeli iste.

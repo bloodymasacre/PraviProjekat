@@ -5,7 +5,8 @@
 
 using namespace std;
 
-class Server{
+class Server
+{
 private:
     int ip;
     vector <Igrac*> igraci;
@@ -24,31 +25,19 @@ public:
     }
     void ispisiIgrace()
     {
-        cout<<"Ip servera je"<<ip<<endl;
-        cout<<"Igraca ima"<<endl;
+        cout<<"Ip servera je "<<ip<<endl;
         for(auto it=igraci.begin(); it<igraci.end(); it++)
         {
             (*it)->opis();
         }
     }
-    int brojIgraca()
-    {
-        return igraci.size();
-    }
-    int brojModeratora()
-    {
-        int broj=0;
-        for(auto it=igraci.begin(); it<igraci.end(); it++)
-        {
-            if ((*it)->id()==2)
-                broj++;
-        }
-        return broj;
-    }
+
     bool kick(const Igrac& ig)
     {
-        for (auto it=igraci.begin(); it<igraci.end(); it++){
-            if (ig.getIme()==(*it)->getIme() && ig.getPol()==(*it)->getPol() ){
+        for (auto it=igraci.begin(); it<igraci.end(); it++)
+        {
+            if (ig.getIme()==(*it)->getIme() && ig.getPol()==(*it)->getPol() )
+            {
                 igraci.erase(it);
                 return true;
             }
@@ -56,16 +45,20 @@ public:
         return false;
 
     }
-    void pretrazi(string ime, string pol, string bojakoze){
+    void pretrazi(string ime, string pol, string bojakoze)
+    {
         bool pronadjen = false;
-        for (auto it=igraci.begin(); it<igraci.end(); it++){
-            if (ime==(*it)->getIme() && pol==(*it)->getPol()){
+        for (auto it=igraci.begin(); it<igraci.end(); it++)
+        {
+            if (ime==(*it)->getIme() && pol==(*it)->getPol())
+            {
                 (*it)->opis();
                 pronadjen=true;
 
             }
         }
-        if (!pronadjen){
+        if (!pronadjen)
+        {
             cout<<"Nema takvih osoba!"<<endl;
         }
     }

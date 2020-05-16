@@ -116,7 +116,7 @@ public:
     }
     virtual void opis()
     {
-        cout<<"ja"<<ime<<" "<<"imam akaunt"<<endl;
+        cout<<"Ja "<<ime<<" "<<"imam akaunt"<<endl;
     }
     friend ostream& operator<< (ostream& izlaz, const Igrac& i);
 };
