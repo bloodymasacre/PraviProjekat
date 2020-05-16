@@ -9,7 +9,7 @@ using namespace std;
 
 class Igrac
 {
-private:
+protected:
     string ime;
     string pol;
     string bojaKoze;
@@ -126,7 +126,7 @@ class Premium: public Igrac
 private:
     bool premium;
 public:
-    Premium(string i="Mimi", string p="muski", string bk="bela", double br=1, bool premium=true):Igrac(i, p, bk, br)
+    Premium(string im, string po, string bk, double brzina1, double MaxBrzina1, bool Sk1, bool Br1, double xx, double yy, double zz,bool premium):Igrac(im, po, bk, brzina1, MaxBrzina1, Sk1, Br1, xx, yy, zz)
     {
         this->premium=premium;
     }
@@ -153,7 +153,7 @@ class Moderator:public Igrac
 private:
     string roles;
 public:
-    Moderator(string n="Sasa", string s="muski", string c="crna", double sp=1, string z="Owner"):Igrac(n,s,c,sp)
+    Moderator(string im, string po, string bk, double brzina1, double MaxBrzina1, bool Sk1, bool Br1, double xx, double yy, double zz, string z):Igrac(im, po, bk, brzina1, MaxBrzina1, Sk1, Br1, xx, yy, zz)
     {
         roles=z;
     }
