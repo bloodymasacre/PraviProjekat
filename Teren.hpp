@@ -33,8 +33,6 @@ public:
         int xx, yy;
         int s;
         s=2;
-        xx=ja.getX();
-        yy=ja.getY();
         if(((xx-x<=s)||(xx-x<=-s)) && ((yy-y<=s)||(yy-s<=-s)))
         {
             ja.setX(x);
@@ -69,6 +67,7 @@ public:
             }
             cout<<endl;
         }
+        cout<<endl;
     }
     char getpolja()
     {

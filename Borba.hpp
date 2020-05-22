@@ -9,8 +9,8 @@
 class Dobitak
 {
 protected:
-    int pare;
-    int kolicinaMat;
+    int pare=0;
+    int kolicinaMat=0;
 public:
     void setPare(int ko)
     {

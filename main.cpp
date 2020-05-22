@@ -125,6 +125,7 @@ int main()
         switch(n)
         {
         case 1:
+            t.pocetak();
             cout<<"Odredite kordinate pomeranja."<<endl;
             cout<<"Mozete se maksimalno pometiri 2 mesta."<<endl;
             cout<<"Unesite kordinate x."<<endl;
@@ -133,10 +134,12 @@ int main()
             cin>>y;
             t.pomeranje(x, y);
         case 2:
+            cout<<endl;
             t.ispismape();
             break;
         case 3:
             ofstream fajl;
+            isprazniFajl();
             if (mode=='a')
             {
                 fajl.open ("Dobitak.txt", ios_base::app);
