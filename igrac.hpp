@@ -15,10 +15,10 @@ protected:
     string bojaKoze;
     double brzina;
     double MaxBrzina;
-    bool Sk;
-    bool Br;
-    Pozicija Sko;
     static int broj;
+    int healt;
+    int X;
+    int Y;
 public:
     Igrac()
     {
@@ -29,15 +29,13 @@ public:
         MaxBrzina=2.5;
         broj++;
     }
-    Igrac(string im, string po, string bk, double brzina1, double MaxBrzina1, bool Sk1, bool Br1, double xx, double yy, double zz):Sko(xx,yy,zz)
+    Igrac(string im, string po, string bk, double brzina1, double MaxBrzina1)
     {
         ime=im;
         pol=po;
         bojaKoze=bk;
         brzina=brzina1;
         MaxBrzina=MaxBrzina1;
-        Sk=Sk1;
-        Br=Br1;
         broj++;
     }
     Igrac(const Igrac& I)
@@ -47,8 +45,6 @@ public:
         bojaKoze=I.bojaKoze;
         brzina=I.brzina;
         MaxBrzina=I.MaxBrzina;
-        Sk=I.Sk;
-        Br=I.Br;
         broj++;
     }
     string getIme() const
@@ -79,6 +75,30 @@ public:
     {
         return broj;
     }
+    int getX()
+    {
+        return X;
+    }
+    int getY()
+    {
+        return Y;
+    }
+    void setX(int xx)
+    {
+        X=xx;
+    }
+    void setY(int yy)
+    {
+        Y=yy;
+    }
+    int gethealt()
+    {
+        return healt;
+    }
+    void setHealt(int healt2)
+    {
+        healt=healt2;
+    }
     static int getStaBroj()
     {
         return broj;
@@ -86,29 +106,6 @@ public:
     ~Igrac()
     {
         broj--;
-    }
-
-    bool Trcanje()
-    {
-        if(Br==true && brzina<MaxBrzina)
-        {
-            brzina=MaxBrzina;
-            return true;
-        }
-        return false;
-    }
-
-    bool Skakanje()
-    {
-        int x, y, z;
-        if(Sk==true && Br==true)
-        {
-            Pozicija(x+1, y, z+1);
-            Sleep(1000);
-            Pozicija(x+1,y,z-1);
-            return true;
-        }
-        return false;
     }
     virtual int id()
     {
@@ -126,7 +123,7 @@ class Premium: public Igrac
 private:
     bool premium;
 public:
-    Premium(string im, string po, string bk, double brzina1, double MaxBrzina1, bool Sk1, bool Br1, double xx, double yy, double zz,bool premium):Igrac(im, po, bk, brzina1, MaxBrzina1, Sk1, Br1, xx, yy, zz)
+    Premium(string im, string po, string bk, double brzina1, double MaxBrzina1, bool premium):Igrac(im, po, bk, brzina1, MaxBrzina1)
     {
         this->premium=premium;
     }
@@ -153,7 +150,7 @@ class Moderator:public Igrac
 private:
     string roles;
 public:
-    Moderator(string im, string po, string bk, double brzina1, double MaxBrzina1, bool Sk1, bool Br1, double xx, double yy, double zz, string z):Igrac(im, po, bk, brzina1, MaxBrzina1, Sk1, Br1, xx, yy, zz)
+    Moderator(string im, string po, string bk, double brzina1, double MaxBrzina1, string z):Igrac(im, po, bk, brzina1, MaxBrzina1)
     {
         roles=z;
     }

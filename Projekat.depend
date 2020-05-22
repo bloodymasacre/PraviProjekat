@@ -5,7 +5,7 @@
 
 1587831799 d:\codeblocks\projekat\igrac.hpp
 
-1589655697 source:c:\users\kolja\documents\github\projekat\main.cpp
+1590152114 source:c:\users\kolja\documents\github\projekat\main.cpp
 	<iostream>
 	"igrac.hpp"
 	"Zivotinje.hpp"
@@ -29,16 +29,17 @@
 	"Hrana.hpp"
 	"Pickaxe.h"
 	"Server.hpp"
+	"Borba.hpp"
 
-1589661324 c:\users\kolja\documents\github\projekat\igrac.hpp
+1589966605 c:\users\kolja\documents\github\projekat\igrac.hpp
 	"Pozicija.h"
 	<windows.h>
 
 1588949246 c:\users\kolja\documents\github\projekat\pozicija.h
 
-1588949246 c:\users\kolja\documents\github\projekat\zivotinje.hpp
+1589974641 c:\users\kolja\documents\github\projekat\zivotinje.hpp
 
-1589131569 c:\users\kolja\documents\github\projekat\oruzije.hpp
+1589970130 c:\users\kolja\documents\github\projekat\oruzije.hpp
 	"fstream"
 
 1588949246 c:\users\kolja\documents\github\projekat\pistolji.h
@@ -53,16 +54,22 @@
 1588949246 c:\users\kolja\documents\github\projekat\axe.h
 	"Orudje.hpp"
 
-1588949246 c:\users\kolja\documents\github\projekat\gradjevine.h
+1590070445 c:\users\kolja\documents\github\projekat\gradjevine.h
 
-1588949246 c:\users\kolja\documents\github\projekat\materijali.hpp
+1590081677 c:\users\kolja\documents\github\projekat\materijali.hpp
 
 1588949246 c:\users\kolja\documents\github\projekat\puske.h
 	"Oruzije.hpp"
 
 1588949246 c:\users\kolja\documents\github\projekat\medikamenti.hpp
 
-1588949246 c:\users\kolja\documents\github\projekat\teren.hpp
+1590154699 c:\users\kolja\documents\github\projekat\teren.hpp
+	"igrac.hpp"
+	<fstream>
+	<string>
+	<cstring>
+	<cstdlib>
+	<ctime>
 
 1588949246 c:\users\kolja\documents\github\projekat\healt.hpp
 
@@ -79,7 +86,14 @@
 1588949246 c:\users\kolja\documents\github\projekat\pickaxe.h
 	"Orudje.hpp"
 
-1589655688 c:\users\kolja\documents\github\projekat\server.hpp
+1589661473 c:\users\kolja\documents\github\projekat\server.hpp
 	"igrac.hpp"
 	<vector>
+
+1590154226 c:\users\kolja\documents\github\projekat\borba.hpp
+	"igrac.hpp"
+	"Zivotinje.hpp"
+	"Oruzije.hpp"
+	"Teren.hpp"
+	"Materijali.hpp"
 

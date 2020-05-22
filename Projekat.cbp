@@ -33,6 +33,9 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="Axe.h" />
+		<Unit filename="Borba.hpp" />
+		<Unit filename="Cela igrica.hpp" />
+		<Unit filename="Dobitak.txt" />
 		<Unit filename="Eksploziv.hpp" />
 		<Unit filename="Gradjevine.h" />
 		<Unit filename="Healt.hpp" />

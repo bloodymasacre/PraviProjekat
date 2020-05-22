@@ -22,8 +22,41 @@ using namespace std;
 #include "Hrana.hpp"
 #include "Pickaxe.h"
 #include "Server.hpp"
+#include "Borba.hpp"
 
 int Igrac::broj=0;
+
+
+void isprazniFajl()
+{
+    ofstream fajl;
+    fajl.open("Dobitak.txt", ofstream::out | ofstream::trunc);
+    fajl.close();
+}
+void pisiTxt2(string Dobitak, string tekst)
+{
+    ofstream fajl;
+    fajl.open (Dobitak);
+    fajl << tekst << endl;
+    fajl.close();
+}
+void citajDobitak(string Dobitak)
+{
+    string linija;
+    ifstream fajl (Dobitak);
+    if (fajl.is_open())
+    {
+        while ( getline (fajl,linija) )
+        {
+            cout << linija << '\n';
+        }
+        fajl.close();
+    }
+
+    else
+        cout << "Neuspesno otvoren fajl";
+
+}
 
 ostream& operator<< (ostream& izlaz, const Oruzije& o)
 {
@@ -54,25 +87,71 @@ ostream& operator<< (ostream& izlaz, const Igrac& i)
     return izlaz;
 }
 
+ostream& operator<<(ostream& izlaz, const Dobitak& d)
+{
+        izlaz<<"Kolicina novca: "<<d.pare<<endl;
+        izlaz<<"Kolicina materijala "<< d.kolicinaMat << endl;
+        return izlaz;
+}
+
+
 int main()
 {
-    Igrac igrac;
-    Igrac igrac2;
-    Oruzije o;
+    Igrac i;
+    Borba b;
     Zivotinje z;
-    cout<<igrac<<endl<<endl;
-    cout<<igrac2<<endl<<endl;
-    cout<<o<<endl<<endl;
-    cout<<z<<endl<<endl;
-    cout<<"Online je:"<<igrac.getBroj()<<" igraca"<<endl;
-    Server se(124151);
-    Igrac igrac3;
-    Premium premium2("mitar", "muski", "crna", 1, 2, false, false, 0, 0, 0, true);
-    Moderator moderator1("natali","zensko","bela", 1, 2, false, false, 0, 0, 0, "admin");
-    se.dodavanje(&igrac3);
-    se.dodavanje(&premium2);
-    se.dodavanje(&moderator1);
-    se.ispisiIgrace();
+    Teren t;
+    Dobitak d;
+    Oruzije o;
+    int n;
+    int x, y;
+    char mode='a';
+    do
+    {
+        cout<<"-----------------------------------------------------------"<<endl;
+        cout<<"                   Dobro dosli u igricu                       "<<endl;
+        cout<<"    ---------------------------------------------------- "<<endl;
+        cout<<"             1.Pomerise po mapi                       "<<endl;
+        cout<<"             2.Ispisi mapu                               "<<endl;
+        cout<<"             3.Ispisi Dobitak                               "<<endl;
+        cout<<"                                                             "<<endl;
+        cout<<"                                                             "<<endl;
+        cout<<"                                                            "<<endl;
+        cout<<"             0.Izadji iz programa                          "<<endl;
+        cout<<"    ----------------------------------------------------  "<<endl;
+        cout<<"Unesite opciju"<<endl;
+
+        cin>>n;
+        switch(n)
+        {
+        case 1:
+            cout<<"Odredite kordinate pomeranja."<<endl;
+            cout<<"Mozete se maksimalno pometiri 2 mesta."<<endl;
+            cout<<"Unesite kordinate x."<<endl;
+            cin>>x;
+            cout<<"Unesite kordinate y."<<endl;
+            cin>>y;
+            t.pomeranje(x, y);
+        case 2:
+            t.ispismape();
+            break;
+        case 3:
+            ofstream fajl;
+            if (mode=='a')
+            {
+                fajl.open ("Dobitak.txt", ios_base::app);
+            }
+            else
+            {
+                    fajl.open ("Dobitak.txt");
+            }
+            fajl<<d<<endl;
+            citajDobitak("Dobitak.txt");
+            break;
+        }
+    }
+    while(n!=0);
+
     return 0;
 
     // Funkcionalnost igrice je da se seta po mapi i skoplja razlicite vrste materijala. Nacini da dobiju materijali su da se nadju u prirodi ili ubiju NPC-evi ili da se ubiju drugi igraci da biste im uzeli iste.

@@ -45,6 +45,14 @@ public:
         }
         return false;
     }
+    int getDamaggg()
+    {
+        return damageO;
+    }
+    void setDamaggg(int dama)
+    {
+        damageO=dama;
+    }
     friend ostream& operator<< (ostream& izlaz, const Oruzije& o);
 
 };
