@@ -22,33 +22,83 @@ public:
         {
             for(j=0; j<10; j++)
             {
-                char letters[] = { 'n', 'm','g'} ;
-                char x = letters[rand() %3];
+                char letters[3] = { 'n', 'm','g'} ;
+                char x = letters[rand() %3+1];
                 polja[i][j]=x;
             }
         }
     }
-    bool pomeranje(int x, int y)
+    void pomeranje(int x, int y)
     {
-        int xx, yy;
-        int s;
-        s=2;
-        if(((xx-x<=s)||(xx-x<=-s)) && ((yy-y<=s)||(yy-s<=-s)))
-        {
-            ja.setX(x);
-            ja.setY(y);
-            return true;
-        }
-        else if((xx-x>=s)||(xx-x>=-s))
-        {
-            cout<<"Uneli ste prevelike vrednosti za x. Podsecam Vas da je limit 2 mesta."<<endl;
-            return false;
-        }
-        else
-        {
-            cout<<"Uneli ste prevelike vrednosti za y. Podsecam Vas da je limit 2 mesta."<<endl;
+        int n;
+    do
+    {
+        cout<<"-----------------------------------------------------------"<<endl;
+        cout<<"                         Kretanje                         "<<endl;
+        cout<<"    ---------------------------------------------------- "<<endl;
+        cout<<"             1.Pomerise napred                            "<<endl;
+        cout<<"             2.Pomeri se nazad                             "<<endl;
+        cout<<"             3.Pomeri se levo                               "<<endl;
+        cout<<"             4.Pomeri se desno                               "<<endl;
+        cout<<"                                                             "<<endl;
+        cout<<"                                                            "<<endl;
+        cout<<"             0.Vrati se u pocetni meni                     "<<endl;
+        cout<<"    ----------------------------------------------------  "<<endl;
+        cout<<"Unesite opciju"<<endl;
 
+        cin>>n;
+        switch(n)
+        {
+        case 1:
+            x=ja.getX()+1;
+            if(x<=10){
+            ja.setX(x);
+            }
+            else
+            {
+                system("cls");
+                cout<<"Presli ste limit."<<endl;
+            }
+            break;
+        case 2:
+            x=ja.getX()-1;
+            if(x<=10){
+            ja.setX(x);
+            }
+            else
+            {
+                system("cls");
+                cout<<"Presli ste limit."<<endl;
+            }ja.setX(x);
+            break;
+        case 3:
+            y=ja.getY()+1;
+            if(y<=10){
+            ja.setY(y);
+            }
+            else
+            {
+                system("cls");
+                cout<<"Presli ste limit."<<endl;
+            }ja.setX(x);
+            break;
+        case 4:
+            y=ja.getY()-1;
+            if(y<=10){
+            ja.setX(y);
+            }
+            else
+            {
+                system("cls");
+                cout<<"Presli ste limit."<<endl;
+            }ja.setX(x);
+            break;
+        case 0:
+            system("cls");
+            return;
         }
+    }
+    while(n!=0);
     }
     void pocetak()
     {
@@ -72,7 +122,7 @@ public:
     char getpolja()
     {
         char letters[] = { 'n', 'm','g'} ;
-        char x = letters[rand() %3];
+        char x = letters[rand() %3+1];
         return x;
     }
     void setpolja(char n)

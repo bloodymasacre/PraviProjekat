@@ -5,7 +5,7 @@
 
 1587831799 d:\codeblocks\projekat\igrac.hpp
 
-1590160367 source:c:\users\kolja\documents\github\projekat\main.cpp
+1590239437 source:c:\users\kolja\documents\github\projekat\main.cpp
 	<iostream>
 	"igrac.hpp"
 	"Zivotinje.hpp"
@@ -63,7 +63,7 @@
 
 1588949246 c:\users\kolja\documents\github\projekat\medikamenti.hpp
 
-1590160344 c:\users\kolja\documents\github\projekat\teren.hpp
+1590245563 c:\users\kolja\documents\github\projekat\teren.hpp
 	"igrac.hpp"
 	<fstream>
 	<string>
@@ -90,7 +90,7 @@
 	"igrac.hpp"
 	<vector>
 
-1590161100 c:\users\kolja\documents\github\projekat\borba.hpp
+1590245188 c:\users\kolja\documents\github\projekat\borba.hpp
 	"igrac.hpp"
 	"Zivotinje.hpp"
 	"Oruzije.hpp"

@@ -126,13 +126,8 @@ int main()
         {
         case 1:
             t.pocetak();
-            cout<<"Odredite kordinate pomeranja."<<endl;
-            cout<<"Mozete se maksimalno pometiri 2 mesta."<<endl;
-            cout<<"Unesite kordinate x."<<endl;
-            cin>>x;
-            cout<<"Unesite kordinate y."<<endl;
-            cin>>y;
             t.pomeranje(x, y);
+            break;
         case 2:
             cout<<endl;
             t.ispismape();
