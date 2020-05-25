@@ -1,33 +1,17 @@
 #ifndef TEREN_HPP_INCLUDED
 #define TEREN_HPP_INCLUDED
-#include "igrac.hpp"
-#include <fstream>
-#include <string>
-#include <cstring>
 #include <cstdlib>
-#include <ctime>
+#include <time.h>
+#include "igrac.hpp"
 
 class Teren
 {
 protected:
-    char polja[10][10];
+    int polja[5][5];
     string voda;
     string vegetacija;
     Igrac ja;
 public:
-    void napunimapu()
-    {
-        int i,j;
-        for(i=0; i<10; i++)
-        {
-            for(j=0; j<10; j++)
-            {
-                char letters[3] = { 'n', 'm','g'} ;
-                char x = letters[rand() %3+1];
-                polja[i][j]=x;
-            }
-        }
-    }
     void pomeranje(int x, int y)
     {
         int n;
@@ -45,13 +29,12 @@ public:
         cout<<"             0.Vrati se u pocetni meni                     "<<endl;
         cout<<"    ----------------------------------------------------  "<<endl;
         cout<<"Unesite opciju"<<endl;
-
         cin>>n;
         switch(n)
         {
         case 1:
             x=ja.getX()+1;
-            if(x<=10){
+            if(x<=5){
             ja.setX(x);
             }
             else
@@ -62,7 +45,7 @@ public:
             break;
         case 2:
             x=ja.getX()-1;
-            if(x<=10){
+            if(x<=5){
             ja.setX(x);
             }
             else
@@ -73,7 +56,7 @@ public:
             break;
         case 3:
             y=ja.getY()+1;
-            if(y<=10){
+            if(y<=5){
             ja.setY(y);
             }
             else
@@ -84,7 +67,7 @@ public:
             break;
         case 4:
             y=ja.getY()-1;
-            if(y<=10){
+            if(y<=5){
             ja.setX(y);
             }
             else
@@ -106,14 +89,29 @@ public:
         ja.setX(0);
         ja.setY(0);
     }
-    void ispismape()
+    void ispismapu()
     {
         int i,j;
-        for(i=0; i<10; i++)
+        for(i=0; i<5; i++)
         {
-            for(j=0; j<10; j++)
+            for(j=0; j<5; j++)
             {
-                cout<<polja[i][j]<<",";
+                if(polja[i][j]==polja[0][3] || polja[i][j]==polja[2][0] || polja[i][j]==polja[2][3] || polja[i][j]==polja[4][0] || polja[i][j]==polja[4][4])
+                {
+                    cout<<"n"<<",";
+                }
+                else if(polja[i][j]==polja[0][2] || polja[i][j]==polja[0][4] || polja[i][j]==polja[1][0] || polja[i][j]==polja[1][3] || polja[i][j]==polja[2][1] || polja[i][j]==polja[2][4] || polja[i][j]==polja[3][0] || polja[i][j]==polja[3][2] || polja[i][j]==polja[4][1] || polja[i][j]==polja[4][3])
+                {
+                    cout<<"m"<<",";
+                }
+                else if(polja[i][j]==polja[1][1] || polja[i][j]==polja[1][4] || polja[i][j]==polja[2][2] || polja[i][j]==polja[3][4] || polja[i][j]==polja[4][2])
+                {
+                    cout<<"g"<<",";
+                }
+                else
+                {
+                    cout<<" "<<",";
+                }
             }
             cout<<endl;
         }
@@ -122,7 +120,7 @@ public:
     char getpolja()
     {
         char letters[] = { 'n', 'm','g'} ;
-        char x = letters[rand() %3+1];
+        char x = letters[rand() %3];
         return x;
     }
     void setpolja(char n)
@@ -137,6 +135,16 @@ public:
         }
     }
 };
+
+/* ovako bi trebalo da izgleda mapa ali ne radi
+
+
+    x, ,m,n,m
+    m,g, ,m,g
+    n,m,g,n,m
+    m, ,m, ,g
+    n,m,g,m,n
+*/
 
 
 #endif // TEREN_HPP_INCLUDED

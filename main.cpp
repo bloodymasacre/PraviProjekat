@@ -23,9 +23,20 @@ using namespace std;
 #include "Pickaxe.h"
 #include "Server.hpp"
 #include "Borba.hpp"
+#include <time.h>
 
 int Igrac::broj=0;
 
+void ispis(int vrh, int stek[]){
+    int i;
+    if(vrh==0){
+        printf("Stek je prazan!:)");
+    }
+    for(i=0;i<vrh;i++){
+        printf("%d",stek[i]);
+    }
+    printf("\n");
+}
 
 void isprazniFajl()
 {
@@ -105,7 +116,10 @@ int main()
     Oruzije o;
     int n;
     int x, y;
+    int stek[KAP];
+    int vrh=0;
     char mode='a';
+    t.pocetak();
     do
     {
         cout<<"-----------------------------------------------------------"<<endl;
@@ -125,26 +139,15 @@ int main()
         switch(n)
         {
         case 1:
-            t.pocetak();
             t.pomeranje(x, y);
+            b.potezi(i,z,'a');
             break;
         case 2:
             cout<<endl;
-            t.ispismape();
+            t.ispismapu();
             break;
         case 3:
-            ofstream fajl;
-            isprazniFajl();
-            if (mode=='a')
-            {
-                fajl.open ("Dobitak.txt", ios_base::app);
-            }
-            else
-            {
-                    fajl.open ("Dobitak.txt");
-            }
-            fajl<<d<<endl;
-            citajDobitak("Dobitak.txt");
+            ispis(vrh,stek);
             break;
         }
     }

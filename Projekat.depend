@@ -5,7 +5,7 @@
 
 1587831799 d:\codeblocks\projekat\igrac.hpp
 
-1590239437 source:c:\users\kolja\documents\github\projekat\main.cpp
+1590440172 source:c:\users\kolja\documents\github\projekat\main.cpp
 	<iostream>
 	"igrac.hpp"
 	"Zivotinje.hpp"
@@ -30,6 +30,7 @@
 	"Pickaxe.h"
 	"Server.hpp"
 	"Borba.hpp"
+	<time.h>
 
 1589966605 c:\users\kolja\documents\github\projekat\igrac.hpp
 	"Pozicija.h"
@@ -63,13 +64,10 @@
 
 1588949246 c:\users\kolja\documents\github\projekat\medikamenti.hpp
 
-1590245563 c:\users\kolja\documents\github\projekat\teren.hpp
-	"igrac.hpp"
-	<fstream>
-	<string>
-	<cstring>
+1590438557 c:\users\kolja\documents\github\projekat\teren.hpp
 	<cstdlib>
-	<ctime>
+	<time.h>
+	"igrac.hpp"
 
 1588949246 c:\users\kolja\documents\github\projekat\healt.hpp
 
@@ -90,7 +88,7 @@
 	"igrac.hpp"
 	<vector>
 
-1590245188 c:\users\kolja\documents\github\projekat\borba.hpp
+1590439992 c:\users\kolja\documents\github\projekat\borba.hpp
 	"igrac.hpp"
 	"Zivotinje.hpp"
 	"Oruzije.hpp"
