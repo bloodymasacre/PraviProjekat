@@ -34,7 +34,6 @@
 		</Compiler>
 		<Unit filename="Axe.h" />
 		<Unit filename="Borba.hpp" />
-		<Unit filename="Dobitak.txt" />
 		<Unit filename="Eksploziv.hpp" />
 		<Unit filename="Gradjevine.h" />
 		<Unit filename="Healt.hpp" />
@@ -56,6 +55,7 @@
 		<Unit filename="Vozila.hpp" />
 		<Unit filename="Vreme.hpp" />
 		<Unit filename="Zivotinje.hpp" />
+		<Unit filename="dobitak.txt" />
 		<Unit filename="igrac.hpp" />
 		<Unit filename="main.cpp" />
 		<Extensions>

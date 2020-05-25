@@ -63,7 +63,8 @@ public:
             {
                 system("cls");
                 cout<<"Presli ste limit."<<endl;
-            }ja.setX(x);
+                ja.setX(y);
+            }
             break;
         case 4:
             y=ja.getY()-1;
@@ -74,7 +75,8 @@ public:
             {
                 system("cls");
                 cout<<"Presli ste limit."<<endl;
-            }ja.setX(x);
+                ja.setX(y);
+            }
             break;
         case 0:
             system("cls");

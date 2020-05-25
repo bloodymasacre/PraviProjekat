@@ -41,20 +41,20 @@ void ispis(int vrh, int stek[]){
 void isprazniFajl()
 {
     ofstream fajl;
-    fajl.open("Dobitak.txt", ofstream::out | ofstream::trunc);
+    fajl.open("dobitak.txt", ofstream::out | ofstream::trunc);
     fajl.close();
 }
-void pisiTxt2(string Dobitak, string tekst)
+void pisiTxt2(string dobitak, string tekst)
 {
     ofstream fajl;
-    fajl.open (Dobitak);
+    fajl.open (dobitak);
     fajl << tekst << endl;
     fajl.close();
 }
-void citajDobitak(string Dobitak)
+void citajDobitak(string dobitak)
 {
     string linija;
-    ifstream fajl (Dobitak);
+    ifstream fajl (dobitak);
     if (fajl.is_open())
     {
         while ( getline (fajl,linija) )
@@ -120,6 +120,7 @@ int main()
     int vrh=0;
     char mode='a';
     t.pocetak();
+    string dobitak;
     do
     {
         cout<<"-----------------------------------------------------------"<<endl;
@@ -150,13 +151,14 @@ int main()
             ofstream fajl;
             if (mode=='a')
             {
-                fajl.open ("izvestaj.txt", ios_base::app);
+                fajl.open ("dobitak.txt", ios_base::app);
             }
             else
             {
-                fajl.open ("izvestaj.txt");
+                fajl.open ("dobitak.txt");
             }
             fajl << d << endl;
+            citajDobitak(dobitak);
             break;
         }
     }
